@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:couldai_user_app/widgets/badge.dart';
+import 'package:couldai_user_app/widgets/badge.dart' as custom_badge;
 
 void main() {
   runApp(const MyApp());
@@ -38,10 +38,10 @@ class MyHomePage extends StatelessWidget {
           runSpacing: 16.0,
           alignment: WrapAlignment.center,
           children: const <Widget>[
-            Badge(text: 'Primary'),
-            Badge(text: 'Secondary', variant: BadgeVariant.secondary),
-            Badge(text: 'Destructive', variant: BadgeVariant.destructive),
-            Badge(text: 'Outline', variant: BadgeVariant.outline),
+            custom_badge.Badge(text: 'Primary'),
+            custom_badge.Badge(text: 'Secondary', variant: custom_badge.BadgeVariant.secondary),
+            custom_badge.Badge(text: 'Destructive', variant: custom_badge.BadgeVariant.destructive),
+            custom_badge.Badge(text: 'Outline', variant: custom_badge.BadgeVariant.outline),
           ],
         ),
       ),
